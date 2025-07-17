@@ -1,0 +1,21 @@
+{
+  "short_name": "Math Master",
+  "name": "Math Master Game",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#1e1e1e",
+  "background_color": "#121212",
+  "description": "A progressive web app math game for 1-5 players."
+}

@@ -1,0 +1,5 @@
+{
+  "name": "Math Master Game",
+  "description": "A progressive web app math game for 1-5 players with multiple game types and difficulty levels.",
+  "requestFramePermissions": []
+}
