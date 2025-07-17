@@ -1,12 +1,13 @@
-const CACHE_NAME = 'math-master-v1';
+const CACHE_NAME = 'math-master-v2'; // Bump version to clear old cache
 const urlsToCache = [
   '/',
   '/index.html',
   '/index.css',
-  '/index.tsx', // In production, this would be the bundled JS file
+  '/index.tsx',
   '/manifest.json',
   '/icon-192.png',
-  '/icon-512.png'
+  '/icon-512.png',
+  'https://unpkg.com/@babel/standalone@7/babel.min.js' // Cache the babel script
 ];
 
 self.addEventListener('install', event => {
