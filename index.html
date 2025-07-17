@@ -8,9 +8,14 @@
     <link rel="manifest" href="manifest.json" />
     <meta name="theme-color" content="#1e1e1e" />
     <link rel="apple-touch-icon" href="icon-192.png">
+    
+    <!-- Load React and ReactDOM from UMD builds -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    
     <!-- Babel Standalone for live transpilation -->
     <script src="https://unpkg.com/@babel/standalone@7/babel.min.js"></script>
-    <script type="importmap">
+<script type="importmap">
 {
   "imports": {
     "react": "https://esm.sh/react@^19.1.0",
@@ -23,8 +28,8 @@
 </head>
   <body>
     <div id="root"></div>
-    <!-- Changed type to "text/babel" and added data-type="module" -->
-    <script type="text/babel" data-type="module" src="index.tsx"></script>
+    <!-- Changed script type and removed module-related attributes -->
+    <script type="text/babel" src="index.tsx"></script>
     <script>
       if ('serviceWorker' in navigator) {
         window.addEventListener('load', () => {

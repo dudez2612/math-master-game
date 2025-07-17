@@ -1,4 +1,4 @@
-const CACHE_NAME = 'math-master-v2'; // Bump version to clear old cache
+const CACHE_NAME = 'math-master-v3'; // Bump version to clear old cache
 const urlsToCache = [
   '/',
   '/index.html',
@@ -7,6 +7,8 @@ const urlsToCache = [
   '/manifest.json',
   '/icon-192.png',
   '/icon-512.png',
+  'https://unpkg.com/react@18/umd/react.development.js',
+  'https://unpkg.com/react-dom@18/umd/react-dom.development.js',
   'https://unpkg.com/@babel/standalone@7/babel.min.js' // Cache the babel script
 ];
 

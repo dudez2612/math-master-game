@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback } from 'react';
-import { createRoot } from 'react-dom/client';
+import ReactDOM from 'react-dom/client';
 
 // --- TYPE DEFINITIONS ---
 interface Player {
@@ -167,6 +167,8 @@ const GameScreen = ({ player, gameType, level, onEndTurn }: {
         return () => clearInterval(timerId);
     }, [isTimerActive, timeLeft]);
 
+
+
     useEffect(() => {
         if (timeLeft === 0) {
             onEndTurn(score);
@@ -330,6 +332,6 @@ const App = () => {
 
 const container = document.getElementById('root');
 if (container) {
-    const root = createRoot(container);
+    const root = ReactDOM.createRoot(container);
     root.render(<App />);
 }
